@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <div id="curtain1" class="curtain1">
+        <hr />
+
+        <canvas id="bigCanvas"></canvas><div id="sidebarContent">this text is in the sidebar</div>
+
+        <div id="showtags">
+
+        </div>
+
+
+        <hr /><div id="textContent">This is text about the stuff on the screen</div><button class="searchButton"
+            onclick="toggleVisibility(document.getElementById('curtain1'))">Close</button>
+    </div>
+    <div id="curtain2" class="curtain2">
+        <div class="loading">Loading...</div>
+    </div>
+    <div id="curtain3">This site is 3D! <br />Grab the background to rotate!<hr /><span style="font-size: 48px; color: Dodgerblue;">
+        <i class="fas fa-sync-alt"></i>
+      </span>
+
+    </div>
+<script>    
+</script>
+    <div class="card">
+        <div class="card-content">
+            <h1>UI Architecture 2021</h1>
+            <h2>Interactive Code Test</h2>
+            <h3><a href="#" onclick="toggleVisibility(document.getElementById('banner1'))" id="aboutButton">About
+                    Ryan</a>
+                <a href="#" onclick="toggleVisibility(document.getElementById('banner2'))" id="notesButton">Design
+                    Notes</a>
+            </h3>
+            <p>(c)2015-2021 All Rights Reserved</p>
+        </div>
+    </div>
+
+    <div id="banner1" class='info' style="display:none;">
+        <h1>
+            About Ryan
+        </h1>
+        <p class='bio'>
+            <hr>
+            <a href="https://www.linkedin.com/in/uiarchitect/">Ryan</a> pushes the boundaries of digital perception in a
+            way that creates an immersive meta-theater.
+            <hr>
+            Symbolic Interactionism, the study of how humans are taught to interface with reality, is the key to Ryan's
+            success in UX Design.
+            If users react in predictable ways to controlled stimuli, then user behavior can be modified by modulating
+            that stimuli in
+            repeatable ways. Ryan creates archetype-based user mythologies which help define how users react to the real
+            (or implied) presence of entropic state-changes.
+            <br /><br />
+            <hr>
+    </div>
+    <div id="banner2" class='info' style="display:none;">
+        <h1>
+            Design Portfolio
+        </h1>
+        <p class='bio'><br />
+            <hr>
+            <a href="https://www.linkedin.com/in/uiarchitect/">Ryan</a> has 20 solid years of professional experience in
+            software engineering, specializing in 3D User Interface development.
+            His professional life has involved a steadily increasing level of responsibility in both private and
+            public-sector software development. He excels at managing full-stack projects from concept to delivery and
+            enjoys the atmosphere of working in a fast paced multicultural environment. <br />
+            <hr>
+
+
+            -- 10 years Executive experience leading development through complex product launch cycles.<br />
+            -- 15 years managing large scale corporate UI/UX, IT, Design, and Support Pipelines.<br />
+            -- a portfolio of thousands of published commercial works<br />
+            <hr>
+    </div>
+    <div id="banner3" class='info' style="display:none;">
+        <h1>
+            Graphic Design
+        </h1>
+
+    </div>
+    <div id="footer" class="footer">
+        <div class="footer-content">
+            <a id="entButton" href='#' onClick="showMedia()">
+                <h2>Commercial Art</h2>
+            </a>
+            <a id="entButton" href='#' onClick="showSites()">
+                <h2>Websites </h2>
+            </a>
+            <a id="entButton" href='#' onClick="showCode()">
+                <h2>Code Test</h2>
+            </a>
+            <a href="https://github.com/castlehale/castlehale.github.io" target="_blank" rel="noreferrer">
+               
+
+<h2>GitHub</h2> <i class="far fa-share-square"></i>
+            </a>
+        </div>
+    </div>
+    <script>
+
+    </script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+        <script src="./three.js" type="text/javascript"></script>
+        <script defer src="./OrbitControls.js" type="text/javascript"></script>
+        <script defer src="./Mirror.js" type="text/javascript"></script>
+        <script defer src="./WaterShader.js" type="text/javascript"></script>
+        <script async src="./js/scripts.js"></script>
+        <script defer src="./js/tagcanvas.min.js" type="text/javascript"></script>
+        <script defer src="./js/fresco.js" type="text/javascript"></script>
+    
+        <script async src="https://kit.fontawesome.com/b6a73d7528.js" crossorigin="anonymous"></script>
+    
+    
+        <link rel="stylesheet" href="css/fresco/fresco.css">
+</body>
+
+</html>

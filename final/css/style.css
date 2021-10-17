@@ -1,0 +1,322 @@
+body {
+	background-color: rgba(0, 0, 15, 1);
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	color: white;
+	vertical-align: middle;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a, a:visited, a:active, a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+img{
+	border-radius: 15px;
+	float: left;
+	border: 2px solid #73AD21;
+	padding: 10px;
+	background-color:rgba(255, 255, 255, 0.250);
+}
+button{
+	padding: 5px;
+	height:50px;
+}
+
+#curtain3{
+position: fixed;
+align-content: center;
+top:5%;
+right:15%;
+width: 200px;
+
+color: #ffffff;
+background-color:rgba(0, 0, 0, 0.5);
+border: #73AD21;
+border-radius: 15px;
+}
+
+#canvas {
+    width:75%;
+    
+        color: #ffffff;
+        background-color:rgba(255, 0, 0, 0.5);
+       /* background: url(resources/images/daikanyama.jpg) no-repeat center center;*/
+        background-size: cover;
+        z-index: 9999;
+      
+      }
+
+#bigCanvas {
+width:75%;
+
+	color: #ffffff;
+	background-color:rgba(255, 0, 0, 0.5);
+   /* background: url(resources/images/daikanyama.jpg) no-repeat center center;*/
+    background-size: cover;
+	z-index: 9999;
+  
+  }
+  #sidebarContent{
+	width:23%;
+position: fixed;
+top: 25px;
+right: 25px;
+	color: #ffffff;
+	background-color:rgba(0, 0, 255, 0.5);
+	z-index: 9999;
+  }
+.curtain1 {
+	background-color: rgb(0, 0, 25, .90);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+display:none;	z-index: 9998;
+  
+  }
+
+
+.curtain2 {
+	background-color: rgba(0, 0, 15, .51);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 9997;
+}
+.card {
+	color: rgba(53, 96, 148, 1);
+	background-color: rgba(53, 96, 148, 0.4);
+	border-radius: 15px 15px 15px 15px;
+	border: solid 1px rgba(53, 96, 148, .85);
+	transition-duration: 0.2s;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	display: flex;
+	top: 10%;left:5%;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+}
+.card .card-content {
+	margin: auto;
+	text-align: center;
+	transform-style: preserve-3d;
+}
+
+.card-content h1 {
+	color: #fff;
+	transform: translateZ(80px);
+	font-size: 20pt;
+}
+
+.card-content h2 {
+	color: rgba(255, 255, 255, 1.0);
+	transform: translateZ(60px);
+	font-size: 14pt;
+}
+
+.card-content h3{
+	color: rgba(255, 255, 255, 1.0);
+	transform: translateZ(80px);
+	font-size: 16pt;
+	padding: 0 20px;
+}
+
+.card-content p {
+	transform: translateZ(50px);
+	font-size: 12pt;
+	font-style: italic;
+}
+
+.card-content p.related {
+	transform: translateZ(80px);
+	font-style: italic;
+}
+
+.card-content a {
+	color: rgba(255, 255, 255, .85);
+	background-color: rgba(53, 96, 148, 0.8);
+	padding: 5px 15px;
+	margin: 10px 10px 10px 10px;
+	text-decoration: none;
+	border-radius: 4px;
+	transform: translateZ(180px);
+}
+
+.card-content a:hover {
+	color: rgba(255, 255, 255, .85);
+	background-color: rgba(53, 96, 148, 0.8);
+	transform: translateZ(220px);
+	text-decoration: underline;
+}
+
+.card-content a:active {
+	color: rgba(255, 255, 255, .85);
+	background-color: rgba(53, 96, 148, 0.8);
+	border: solid 1px #203E5F;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 25px;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 7500;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+
+.footer-content {
+	justify-content: space-between;
+	width: 90%;
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+}
+
+.footer-content a {
+	display: flex;
+	justify-content: space-around;
+	text-decoration: none;
+	color: #fff;
+	padding-right: 10px;
+	padding-left: 10px;
+	background: rgba(53, 96, 148, 0);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.footer-content a:hover {
+	background: #356094;
+	text-decoration: underline;
+}
+
+.footer-content a:active {
+	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	background: #2E5481;
+	text-decoration: underline;
+}
+
+.footer-content button {
+	display: flex;
+	justify-content: space-around;
+	text-decoration: none;
+	color: #fff;
+	padding-right: 10px;
+	padding-left: 10px;
+	background: rgba(53, 96, 148, 0);
+	border-radius: 4px;
+}
+
+.footer-content button:hover {
+	background: #356094;
+	text-decoration: underline;
+}
+
+.footer-content button:active {
+	-webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+	background: #2E5481;
+	text-decoration: underline;
+}
+
+.loading {
+	position: fixed;
+	margin-left: 40%;
+	margin-right: 33%;
+	margin-top: 25%;
+}
+
+
+.info {
+    width: 40%;
+        background-color: rgba(200, 200, 200, 0.75);
+        padding: 15px;
+        color: #000;
+        overflow: hidden;
+        text-align: justify-all;
+        z-index: 9999;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        bottom: 25%;
+        box-shadow: 5px 5px 0 0 #000;
+        border-radius: 15px;
+    }
+    .info h1 {
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        font-weight: 400;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        animation: fadein 1.2s;	border-radius: 15px;
+    
+    }
+    .info img {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        position: relative;
+        z-index: 1;
+        animation: grow 1.6s;
+    }
+    .info a {
+        color: #0000ff;
+    
+    }
+    .info .bio {
+        position: relative;
+        margin: 20px;
+        animation: slidein 1.2s;
+    
+    }
+    
+    @keyframes fadein {
+        from {
+            color: transparent;
+        }
+        to {
+            color: inherit;
+        }
+    }
+    @keyframes grow {
+        from {
+            transform: scale(0);
+        }
+        80% {
+            transform: scale(1.1);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    @keyframes slidein {
+        from {
+            opacity: 0;
+        }
+        49.9% {
+            opacity: 0;
+        }
+        50% {
+            left: -240px;
+        }
+        to {
+            left: 0;
+        }
+    }
+
+	
