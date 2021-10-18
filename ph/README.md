@@ -1,2 +1,0 @@
-# paninihub
-panini-hub
