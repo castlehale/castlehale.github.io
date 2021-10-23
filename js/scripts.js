@@ -206,7 +206,7 @@ $(document).ready(function () {
     $('.loading').fadeOut(500);
     $('#curtain2').fadeOut(500);
 
-    $('#curtain3').fadeOut(2500);
+    $('#curtain3').fadeOut(5000);
 
 
 
