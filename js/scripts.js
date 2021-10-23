@@ -182,7 +182,7 @@ function touchHandler(e) {
     var ay = ($(window).innerHeight() / 2 - e.pageY) / 10;
     card.attr("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-webkit-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-moz-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg)");
 };
-var folder = "/thumbs/";
+var folder = "./thumbs/";
 images2.push('<ul>');
         $.ajax({
             url: folder,
