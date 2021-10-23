@@ -94,7 +94,7 @@ function getPage() {
         var light = new THREE.DirectionalLight(0xffffbb, 1);
         light.position.set(-1, 1, -1);
         scene.add(light);
-        waterNormals = new THREE.TextureLoader().load('../waternormals.jpg');
+        waterNormals = new THREE.TextureLoader().load('./waternormals.jpg');
         waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping;
         water = new THREE.Water(renderer, camera, scene, {
             textureWidth: 512,
@@ -182,7 +182,7 @@ function touchHandler(e) {
     var ay = ($(window).innerHeight() / 2 - e.pageY) / 10;
     card.attr("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-webkit-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-moz-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg)");
 };
-var folder = "./thumbs/";
+var folder = "thumbs/";
 images2.push('<ul>');
         $.ajax({
             url: folder,
@@ -205,8 +205,7 @@ images2.push('<ul>');
 $(document).ready(function () {
     $('.loading').fadeOut(500);
     $('#curtain2').fadeOut(500);
-    $('#curtain3').fadeOut(2500);
-    $('#curtain3').fadeIn(2500);
+
     $('#curtain3').fadeOut(2500);
 
 
