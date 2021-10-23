@@ -3,8 +3,6 @@ var images2 = [];
 
 function hideStuff() {
     //    $(searches).hide();
-    //    $(adBox).fadeIn();
-    //    $(searchButton2).show();
 }
 
 function goHome() {
@@ -12,9 +10,7 @@ function goHome() {
 }
 
 function getPage() {
-    //    $('#hideButton').hide();
-    //    $(shim).show();
-    //    $('#adBox').fadeIn();    
+
     var container;
     var camera, scene, renderer;
     var parameters = {
@@ -86,8 +82,8 @@ function getPage() {
         camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.5, 3000000);
         camera.position.set(2000, 750, 2000);
         controls = new THREE.OrbitControls(camera, renderer.domElement);
-        //controls = new THREE.DeviceOrientationControls(camera, renderer.domElement);
-        //controls = new THREE.VRControls(camera, renderer.domElement);
+        //if exists then controls = new THREE.DeviceOrientationControls(camera, renderer.domElement);
+        //if exists then controls = new THREE.VRControls(camera, renderer.domElement);
 
         controls.enablePan = false;
         controls.minDistance = 1000.0;
@@ -118,11 +114,8 @@ function getPage() {
         mirrorMesh.rotation.x = -Math.PI * 0.5;
         scene.add(mirrorMesh);
 
-
-        // load skybox
-        
     }
-    //
+
     function resizeCanvas() {
         $(document).width = window.innerWidth;
         $(document).height = window.innerHeight;
@@ -175,7 +168,7 @@ function toggleVisibility(element) {
     }
 };
 function mouseHandler() {
-    // set mouse control
+    // set mouse control for 'headtracking' >> removed from current codebase
     var card = $(".card");
     $(document).on("mousemove", function (e) {
         var ax = -($(window).innerWidth() / 2 - e.pageX) / 20;
@@ -184,6 +177,7 @@ function mouseHandler() {
     });
 }
 function touchHandler(e) {
+    // set touch control for 'headtracking' >> removed from current codebase
     var ax = -($(window).innerWidth() / 2 - e.pageX) / 20;
     var ay = ($(window).innerHeight() / 2 - e.pageY) / 10;
     card.attr("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-webkit-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-moz-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg)");
@@ -197,7 +191,7 @@ images2.push('<ul>');
                 $(data).find("a").attr("href", function(i, val) {
                     if (val.match(/\.(jpe?g|png|webp)$/)) {
                         //images2.push("<li><img src='"+folder+val+"'></li>");
-                        images2.push('<li><a href=./thumbs/"' + val + '" class="fresco" data-fresco-group="shared_options" class="fresco" data-fresco-group="shared_options"> <img src="./thumbs/' + val + '"height="100" width="100" /> </a></li>');
+                        images2.push('<li><a href=./images/"' + val + '" class="fresco" data-fresco-group="shared_options" class="fresco" data-fresco-group="shared_options"> <img src="./images/' + val + '"height="100" width="100" /> </a></li>');
     
                     }
                 });images2.push('</ul>')
